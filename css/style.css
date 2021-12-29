@@ -1,0 +1,507 @@
+/* =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+                        Common CSS Start Here
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= */
+@font-face {
+    font-family: Myriadpro-regular;
+    src: url(../myriad-pro-cufonfonts/MYRIADPRO-REGULAR.OTF);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.clr {
+    clear: both;
+}
+
+/* =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+                        Common CSS End Here
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= */
+
+
+
+
+/* =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+                        Header Part Start Here
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= */
+
+#header {
+    height: 32px;
+    background: #0872b9;
+}
+
+.header_cont {
+    height: 32px;
+}
+
+.header_text {
+    height: 32px;
+    width: 50%;
+    float: left;
+}
+
+.header_icon {
+    height: 32px;
+    width: 50%;
+    float: left;
+    text-align: right;
+}
+
+.header_text p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #e7e7e7;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 32px;
+}
+
+.header_icon a {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #e7e7e7;
+    text-align: right;
+    margin-left: 24px;
+    transition: all linear 0.3s;
+}
+
+.header_icon a:hover {
+    color: #353535;
+}
+
+/* =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+                        Header Part End Here
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= */
+
+
+
+
+/* =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+                        Menu Part Start Here
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= */
+#menu {
+    height: 80px;
+}
+
+.menu_cont {
+    height: 100%;
+}
+
+.logo {
+    height: 100%;
+    width: 15%;
+    float: left;
+    line-height: 80px;
+}
+
+.menu_text {
+    height: 100%;
+    width: 85%;
+    float: left;
+}
+
+.menu_text ul {
+    float: right;
+}
+
+.menu_text ul li {
+    float: left;
+}
+
+.menu_text ul li a {
+    font-size: 14px;
+    color: #353535;
+    margin-left: 15px;
+    line-height: 80px;
+    font-family: Myriadpro-regular;
+    transition: all linear 0.3s;
+}
+
+.menu_text ul li a:hover {
+    color: #0872b9;
+}
+
+/* =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+                        Menu Part End Here
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= */
+
+
+
+/* =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+                        Banner Part Start Here
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= */
+#banner {
+    background: url(../images/Banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 88px 0;
+    position: relative;
+    z-index: 1;
+}
+
+#banner::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.60);
+    z-index: -1;
+}
+
+.banner-text {
+    width: 453px;
+    float: right;
+    text-align: right;
+}
+
+.banner-text h2 {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: -10px;
+}
+
+.banner-text h1 {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: -10px;
+}
+
+.banner-text p {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    padding-top: 10px;
+}
+
+.banner-text a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    margin-left: 20px;
+    margin-top: 30px;
+    transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    -Webkit-transition: all linear 0.3s;
+}
+
+.banner-text a:hover {
+    background: #0872b9;
+    border: 1px solid #0872b9;
+
+}
+
+/* =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+                        Banner Part End Here
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= */
+
+
+
+
+/* =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+                        About Part Start Here
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= */
+#about {
+    margin: 49px 0px;
+    text-align: center;
+}
+
+.common_head {
+    position: relative;
+    display: inline-block;
+}
+
+.common_head h2 {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    color: #353535;
+    text-transform: uppercase;
+}
+
+.common_head img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.about_image {
+    width: 380px;
+    float: left;
+}
+
+.about_text {
+    width: 560px;
+    float: left;
+}
+
+.about_text p {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    color: #555555;
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 36px;
+}
+
+.about_image img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.about_text p span {
+    display: block;
+    padding-top: 23px;
+}
+
+.about_row {
+    padding-top: 40px;
+}
+
+/* =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+                        About Part End Here
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= */
+
+
+
+
+
+/* =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+                        Service Part Start Here
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= */
+#service {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.service_col {
+	padding: 50px 20px 20px;
+	width: 31.91%;
+	margin-right: 20px;
+	background: #f1f1f1;
+	float: left;
+	position: relative;
+    transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+}
+.service_col:hover{
+    box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.2);
+}
+
+.service_col h4 {
+    color: #353535;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 7px;
+}
+
+.service_col p {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    color: #555555;
+    margin-bottom: -4px;
+}
+.service_icon {
+    width: 69px;
+    height: 69px;
+    background: #f1f1f1;
+    line-height: 69px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    left: 50%;
+    top: -36px;
+    transform: translateX(-50%);
+    transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+}
+
+.service_icon::after {
+	position: absolute;
+	left: -3px;
+	top: -3px;
+	width: 69px;
+	height: 69px;
+	border: 1px solid #f1f1f1;
+	border-radius: 50%;
+	content: '';
+    transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+}
+.service_icon::before {
+    position: absolute;
+    left: -6px;
+    top: -6px;
+    width: 71px;
+    height: 71px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    content: '';
+}
+.service_row{
+    padding-top: 68px;
+}
+.service_col:nth-child(3){
+    margin-right: 0;
+}
+.service_col:hover .service_icon{
+    background: #5bc5f4;
+}
+.service_col:hover .service_icon::after{
+    border-color:#5bc5f4;
+}
+/* =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+                        Service Part End Here
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= */
+
+
+
+
+
+/* =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+                        Portfolio Part Start Here
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= */
+#portfolio{
+    text-align: center;
+    padding-bottom: 60px;
+}
+.port_row{
+    padding-top: 30px;
+}
+.port_col{
+	width: 23.4%;
+	float: left;
+	margin-right: 20px;
+}
+.port_img img{
+    width: 100%;
+    max-width: 100%;
+    transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+}
+.port_col .port_img:first-child{
+    margin-bottom: 20px;
+}
+.port_col:nth-child(4){
+    margin-right: 0;
+}
+.port_img{
+    position: relative;
+    overflow: hidden;
+}
+.port_img .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.60);
+    transform: scale(0);
+    transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+}
+.port_img .overlay a{
+    width: 40px;
+    height: 40px;
+    background: #5bc5f4;
+    border-radius: 50%;
+    line-height: 40px;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.port_img:hover .overlay{
+    transform: scale(1);
+    transform-origin: bottom;
+}
+.port_img:hover img{
+    transform: scale(1.2);
+    transform-origin: bottom;
+}
+
+/* =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+                        Portfolio Part End Here
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+                        Header Part Start Here
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= */
+/* =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+                        Header Part End Here
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= */
+/* =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+                        Header Part Start Here
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= */
+/* =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+                        Header Part End Here
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= */
